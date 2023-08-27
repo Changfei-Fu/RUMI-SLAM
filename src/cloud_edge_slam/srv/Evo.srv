@@ -1,0 +1,10 @@
+bool use_ref
+string dataset_name 
+geometry_msgs/PoseStamped[] poses
+float32 ori_duration
+---
+float32 ate
+float32 rate
+float32 ref_traj_duration
+float32 est_traj_duration
+sensor_msgs/Image traj_img

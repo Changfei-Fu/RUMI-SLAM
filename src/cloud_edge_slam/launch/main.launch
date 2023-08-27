@@ -1,0 +1,134 @@
+<launch>
+    <remap from="/camera/image_raw" to="/camera/rgb/image_color"/>
+    <!--     launch ORB SLAM3  -->
+    <node name="cloud_edge_slam" pkg="cloud_edge_slam" type="cloud_edge_slam_node" required="true" > 
+        <param name="vocabulary_path" value="$(find cloud_edge_slam)/Vocabulary/ORBvoc.txt" />
+
+        <!-- ！！！setting_path 参数：指定ORB SLAM3的配置文件 ！！！ -->
+        <!-- ！！！data_type 参数：指定数据集的类型，txt或bag ！！！ -->
+        <!-- ！！！data_path 参数：指定数据集的路径，即txt文件或bag文件路径 ！！！ -->
+        
+        <!-- Real Dataset -->
+        <!-- <param name="setting_path" value="$(find cloud_edge_slam)/config/Realsense_640_360.yaml" /> -->
+        <!-- <param name="setting_path" value="$(find cloud_edge_slam)/config/RealSustech.yaml" /> -->
+        <!-- <param name="data_type" value="txt" /> -->
+        <!-- <param name="data_path" value="/media/red0orange/Data/数据集/slam-sustech/cam0/resize_rgb_begin_sample.txt" /> -->
+
+        <!-- <param name="setting_path" value="$(find cloud_edge_slam)/config/temp.yaml" /> -->
+        <!-- <param name="data_type" value="bag" /> -->
+        <!-- <param name="data_path" value="/media/red0orange/Data/whole_sample.bag" /> -->
+        <!-- <param name="data_path" value="/media/red0orange/Data/test_t_1.bag" /> -->
+
+        <!-- TUM Dataset -->
+        <!-- <param name="setting_path" value="$(find cloud_edge_slam)/config/TUM1.yaml" /> -->
+        <param name="setting_path" value="$(find cloud_edge_slam)/config/TUM2.yaml" />
+        <!-- <param name="setting_path" value="$(find cloud_edge_slam)/config/TUM3.yaml" /> -->
+
+        <param name="data_type" value="txt" />
+        <!-- <param name="data_path" value="/media/red0orange/Data/数据集/CloudEdge/rgbd_dataset_freiburg3_structure_texture_near/draw_figure_2/19-30s.txt" /> -->
+
+        <!-- <param name="data_type" value="bag" />
+        <param name="data_path" value="/media/red0orange/Data/数据集/CloudEdge/2022-08-09-16-56-00_resize.bag" /> -->
+
+        <!-- <param name="data_type" value="bag" />
+        <param name="data_path" value="/media/red0orange/Data/数据集/CloudEdge/rgbd_dataset_freiburg2_pioneer_360_cut_0-24s.bag" /> -->
+
+        <!-- <param name="data_type" value="bag" />
+        <param name="data_path" value="/media/red0orange/Data/数据集/CloudEdge/rgbd_dataset_freiburg3_structure_texture_far.bag" /> -->
+
+        <!-- <param name="data_type" value="txt" /> -->
+        <!-- <param name="data_path" value="/media/red0orange/Data/数据集/CloudEdge/rgbd_dataset_freiburg3_nostructure_notexture_near_withloop/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg3_long_office_household/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg1_floor/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg1_floor/rgb_400-1000.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg1_room/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg1_teddy/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg2_desk/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg2_360_kidnap/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg2_pioneer_360/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg2_pioneer_360/rgb0-350.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg2_pioneer_slam/rgb.txt" /> -->
+        <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg2_pioneer_slam/rgb1100-1600.txt" />
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg2_pioneer_slam2/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg2_pioneer_slam3/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-tum/rgbd_dataset_freiburg3_teddy/rgb.txt" /> -->
+
+        <!-- <param name="data_type" value="txt" />
+        <param name="data_path" value="/media/red0orange/Data/数据集/CloudEdge/rgbd_dataset_freiburg3_structure_texture_near/rgb_0-30s_center_empty.txt" /> -->
+
+
+        <!-- ICL Dataset -->
+        <!-- <param name="setting_path" value="$(find cloud_edge_slam)/config/icl.yaml" />
+        <param name="data_type" value="txt" /> -->
+
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-icl/living_room_traj0_frei_png/rgb_preprocess.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-icl/living_room_traj1_frei_png/rgb_preprocess.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-icl/living_room_traj1_frei_png/rgb_preprocess0-500.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-icl/living_room_traj2_frei_png/rgb_preprocess.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-icl/living_room_traj3_frei_png/rgb_preprocess.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-icl/traj0_frei_png/rgb_preprocess.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-icl/traj1_frei_png/rgb_preprocess.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-icl/traj2_frei_png/rgb_preprocess.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-icl/traj3_frei_png/rgb_preprocess.txt" /> -->
+
+
+        <!-- EuRoc Dataset -->
+        <!-- <param name="setting_path" value="$(find cloud_edge_slam)/config/euroc.yaml" /> -->
+        <!-- <param name="setting_path" value="$(find cloud_edge_slam)/config/euroc_ori.yaml" /> -->
+        <!-- <param name="data_type" value="txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-euroc/MH01/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-euroc/MH02/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-euroc/MH03/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-euroc/MH04/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-euroc/MH05/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-euroc/V101/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-euroc/V102/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-euroc/V103/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-euroc/V201/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-euroc/V202/rgb.txt" /> -->
+        <!-- <param name="data_path" value="/home/red0orange/Data/datasets/slam-euroc/V203/rgb.txt" /> -->
+
+        <!-- 指定结果的保存路径，将保存运行时间、消耗内存的一些信息 -->
+        <param name="result_path" value="/home/red0orange/projects/Cloud-Edge-SLAM/new_results_2" />
+
+        <!-- ！！！ 参数：Cloud SLAM Action名称，一定要和Cloud SLAM端保持一致 ！！！ -->
+        <param name="cloud_topic_name" value="/cloud_slam" />
+
+        <!-- ！！！参数：Merge时是否忽略Inliers的判断，若为true，无论算出来是什么情况都合并 ！！！ -->
+        <param name="merge_anyway" value="true" />
+        <!-- ！！！参数：（需要直接全部使用offline map bag时使用）是否Online运行，若为true，将等待一个Offline的包含所有map的msg后运行 ！！！ -->
+        <param name="cloud_online" value="true" />
+        <!-- ！！！参数：（一般不使用，需要手动rosbag play调试时使用）是否Online运行，若为true，将必须等待Cloud SLAM的Action连接成功后才初始化 ！！！ -->
+        <param name="real_online" value="true" />
+        <!-- ！！！ 参数：（一般保持打开）是否开启Cloud Merging线程 ！！！-->
+        <param name="cloud_merge" value="true" />
+        <!-- ！！！ 参数：是否保存上传给Cloud SLAM的msg bag ！！！-->
+        <param name="save_cloud_bag" value="false" />
+
+        <!-- ！！！ 参数：（调试时尽量先开启这个选项，测试完成后再进行不等待的实时运行）是否等待Cloud SLAM的结果并Merge完成后再继续运行，若为true，将必须等待Cloud SLAM的Action连接成功后才初始化 ！！！-->
+        <param name="wait_cloud_result" value="true" />
+        <!-- ！！！ 参数：每帧运行后睡眠的时间 ！！！-->
+        <param name="main_loop_sleep_ms" value="30" />
+
+        <!-- ！！！ 参数：Edge Front Map选取的最小keyframe数量要求 ！！！-->
+        <param name="sampler_edge_front_kf_num" value="2" />
+        <!-- ！！！ 参数：Edge Back Map选取的最小keyframe数量要求 ！！！-->
+        <param name="sampler_edge_back_kf_num" value="2" />
+        <!-- ！！！ 参数：Edge Front Map选取的最短时间要求 ！！！-->
+        <param name="sampler_edge_front_min_time" value="0" />
+        <!-- ！！！ 参数：Edge Back Map选取的最短时间要求 ！！！-->
+        <param name="sampler_edge_back_min_time" value="0" />
+
+        <!-- ！！！ 参数：光流法Downsample的PD和th参数设置 ！！！-->
+        <param name="sampler_pd_kp" value="0.8" />
+        <param name="sampler_pd_kd" value="0.08" />
+        <param name="sampler_pd_th" value="12" />
+        
+        <!-- 参数：是否开启keyframe culling，若为ture，将影响Merge时关联的KF数量，效果不好 -->
+        <param name="kf_culling" value="false" />
+    </node>
+
+    <!-- memory pub -->
+    <!-- <node name="memory_pub" pkg="cloud_edge_slam" type="pub_memory.py" required="true" />  -->
+    <node name="evo_server" pkg="cloud_edge_slam" type="evo_node.py" required="true" /> 
+</launch>

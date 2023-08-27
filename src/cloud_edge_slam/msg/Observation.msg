@@ -1,0 +1,2 @@
+int64 keyframe_id
+int64 refer_keypoint_index
