@@ -1,4 +1,5 @@
 # RUMI-SLAM
+Our RUMI-SLAM system contains two parallel processes for realtime and non-realtime submap building. The additional back submap can be built on the un-tracked frames to establish the data association for submap merging without the requirement of loop-closure.
 ## Run
 Let's take a demo of a [TUM dataset](https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download) as an example of how to run our RUMI-SLAM.
 
@@ -57,17 +58,3 @@ python src/edgecloud/scripts/cloud_slam.py
 source devel/setup.bash
 roslaunch rumi-slam main.launch
 ```
-
-## Others
-### About Downsample Method
-The default downsample method is the optical flow sampling, which means that you need to adjust the `PD` and `th` parameters for each different dataset.
-If you want to debug other part of system, you can change the code to use asymmetric sampling for convenience. You need to uncomment **90-97** lines in `src/rumi-slam/lib_src/KFDSample.cc` and comment **99-172** line of it.
-
-### filesystem bug
-**Error**: `fatal error: filesystem: No such file or directory`
-
-**Solution**: Because the `<filesystem>` library need `g++-8`, you need to `sudo apt-get install g++-8` and `export CXX="g++-8" CC="gcc-8"` before `catkin_make`.
-
-### Sophus CMake Bug
-Error: `make_integer_sequence in namespace 'std' does not name a template type`
-Solve: `set(CMAKE_CXX_STANDARD 11)` to `set(CMAKE_CXX_STANDARD 14)` in CMakeLists.txt
