@@ -61,7 +61,7 @@ roslaunch rumi-slam main.launch
 ## Others
 ### About Downsample Method
 The default downsample method is the optical flow sampling, which means that you need to adjust the `PD` and `th` parameters for each different dataset.
-If you want to debug other part of system, you can change the code to use asymmetric sampling for convenience. You need to uncomment **90-97** lines in `src/cloud_edge_slam/lib_src/KFDSample.cc` and comment **99-172** line of it.
+If you want to debug other part of system, you can change the code to use asymmetric sampling for convenience. You need to uncomment **90-97** lines in `src/rumi-slam/lib_src/KFDSample.cc` and comment **99-172** line of it.
 
 ### filesystem bug
 **Error**: `fatal error: filesystem: No such file or directory`
