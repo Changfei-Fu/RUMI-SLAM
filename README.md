@@ -46,7 +46,7 @@ Let's take a demo of a [TUM dataset](https://cvg.cit.tum.de/data/datasets/rgbd-d
     <!-- <node name="evo_server" pkg="cloud_edge_slam" type="evo_node.py" required="true" />  -->
 </launch>
 ```
-3. Launch Cloud SLAM in your server machine.
+3. Launch back-end SLAM in your server machine.
 ```bash
 conda activate droidenv5 # switch to env for droidslam
 python src/edgecloud/scripts/cloud_slam.py
