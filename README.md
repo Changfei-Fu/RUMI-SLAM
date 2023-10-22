@@ -3,6 +3,7 @@ RUMI-SLAM is built on top of [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3
 Our RUMI-SLAM system contains two parallel processes for realtime and non-realtime submap building. 
 The additional back submap can be built on the un-tracked frames to establish the data association for submap merging without the requirement of loop-closure.
 
+Our paper[] has been accepted for publication on IEEE Transactions on Industrial Electronics(19/10/2023).
 ## Run
 Let's take a demo of a [TUM dataset](https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download) as an example of how to run our RUMI-SLAM.
 
