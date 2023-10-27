@@ -1,5 +1,5 @@
 # RUMI-SLAM
-RUMI-SLAM is built on top of [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) by modifying the tracking, mapping, and optimization processes.
+RUMI-SLAM is built upon [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) by modifying the tracking, mapping, and optimization processes.
 This system contains two parallel processes for realtime and non-realtime submap building. 
 The additional back submap can be built on the un-tracked frames to establish the data association for submap merging without the requirement of loop-closure.
 
