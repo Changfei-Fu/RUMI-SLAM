@@ -4,7 +4,7 @@ This system contains two parallel processes for realtime and non-realtime submap
 The additional back submap can be built on the un-tracked frames to establish the data association for submap merging without the requirement of loop-closure.
 
 If you want to develop your program based on our code, please cite our paper: 
-W. Chen, C. Fu, L. Zhu, S. Loo, H. Zhang, "Rumination Meets VSLAM: You Don't Need to Build All the Submaps in Real-time", accepted by IEEE Transactions on Industrial Electronics(18/10/2023)[Rumination Meets VSLAM: You Don't Need to Build All the Submaps in Real-time](https://doi.org/10.1109/TIE.2023.3327342)].
+W. Chen, C. Fu, L. Zhu, S. Loo, H. Zhang, "[Rumination Meets VSLAM: You Don't Need to Build All the Submaps in Real-time](https://doi.org/10.1109/TIE.2023.3327342)]", accepted by IEEE Transactions on Industrial Electronics(18/10/2023).
 ## Run
 Let's take a demo of a [TUM dataset](https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download) as an example of how to run our RUMI-SLAM.
 
