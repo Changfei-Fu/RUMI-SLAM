@@ -1,9 +1,10 @@
 # RUMI-SLAM：You Don't Need to Build All the Sub-maps in Realtime
+
 RUMI-SLAM is built upon [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) by modifying the tracking, mapping, and optimization processes.
 This system contains two parallel processes for realtime and non-realtime submap building. 
 The additional back submap can be built on the un-tracked frames to establish the data association for submap merging without the requirement of loop-closure.
 
-If you want to develop your program based on our code, please cite our paper: 
+If you want to develop your program based on our work, please cite: 
 [W. Chen, C. Fu, L. Zhu, S. Loo, H. Zhang, "Rumination Meets VSLAM: You Don't Need to Build All the Submaps in Real-time"](https://doi.org/10.1109/TIE.2023.3327342), accepted by IEEE Transactions on Industrial Electronics(18/10/2023).
 ## Run
 Let's take a demo of a [TUM dataset](https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download) as an example of how to run our RUMI-SLAM.
