@@ -4,7 +4,7 @@ RUMI-SLAM is built upon [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) by 
 This system contains two parallel processes for realtime and non-realtime submap building. 
 The additional back submap can be built on the un-tracked frames to establish the data association for submap merging without the requirement of loop-closure.
 
-If you want to develop your program based on our work, please cite our [Paper](https://doi.org/10.1109/TIE.2023.3327342): 
+If you want to develop your program based on our work, please cite our [RUMI-SLAM](https://doi.org/10.1109/TIE.2023.3327342): 
 Rumination Meets VSLAM: You Don't Need to Build All the Submaps in Real-time. Weinan Chen 
 †, Changfei Fu 
 †, Lei Zhu, Shing-Yan Loo, Hong Zhang.
