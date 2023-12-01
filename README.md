@@ -1,4 +1,5 @@
-# RUMI-SLAM：You Don't Need to Build All the Sub-maps in Realtime
+# RUMI-SLAM：
+# You Don't Need to Build All the Sub-maps in Realtime
 
 RUMI-SLAM is built upon [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) by modifying the tracking, mapping, and optimization processes.
 This system contains two parallel processes for realtime and non-realtime submap building. 
