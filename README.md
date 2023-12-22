@@ -24,8 +24,9 @@ Let's take a demo of a [TUM dataset](https://cvg.cit.tum.de/data/datasets/rgbd-d
 
 1. Download a sequence of TUM dataset:<br>
 `wget https://cvg.cit.tum.de/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_nostructure_notexture_far.tgz -O ~/rgbd_dataset_freiburg3_nostructure_notexture_far.tgz`.<br>
-Unzip it: `cd ~ && tar zxvf rgbd_dataset_freiburg3_nostructure_notexture_far.tgz`.<br>
-2. Modify the launch file (`src/rumi-slam/launch/main.launch`) according to our dataset path: 
+Unzip it:<br>
+ `cd ~ && tar zxvf rgbd_dataset_freiburg3_nostructure_notexture_far.tgz`.<br>
+3. Modify the launch file (`src/rumi-slam/launch/main.launch`) according to our dataset path: 
 ```yaml
 <launch>
     <remap from="/camera/image_raw" to="/camera/rgb/image_color"/>
