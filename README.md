@@ -8,7 +8,7 @@ The additional back submap can be built on the un-tracked frames to establish th
 Biomimetic and Intelligent Robotics Lab, Guangdong University of Technology, Guangzhou;<br>
 Robotics and Computer Vision Lab, Southern University of Science and Technology, Shenzhen;
 
-If you want to develop your program based on our work, please cite:
+If you want to develop your project based on our work, please cite:
 ```yaml
 @ARTICLE{10314038,
   author={Chen, Weinan and Fu, Changfei and Zhu, Lei and Loo, Shing-Yan and Zhang, Hong},
