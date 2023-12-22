@@ -1,11 +1,9 @@
 # Rumination Meets VSLAM: You Don't Need to Build All the Sub-maps in Realtime (T-IE 2023)
-[[Paper]](https://doi.org/10.1109/TIE.2023.3327342) 
-
 [Weinan Chen](https://jdgcxy.gdut.edu.cn/info/1099/3473.htm), [Changfei Fu](https://rcvlab.eee.sustech.edu.cn/authors/changfei_fu/), Lei Zhu, Shing-Yan Loo and [Hong Zhang](https://rcvlab.eee.sustech.edu.cn/authors/hong_zhang/).<br>
 Biomimetic and Intelligent Robotics Lab, Guangdong University of Technology, Guangzhou;<br>
 Robotics and Computer Vision Lab, Southern University of Science and Technology, Shenzhen;
 
-RUMI-SLAM is built upon [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) by modifying the tracking, mapping, and optimization processes.
+RUMI-SLAM[[Paper]](https://doi.org/10.1109/TIE.2023.3327342) is built upon [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) by modifying the tracking, mapping, and optimization processes.
 This system contains two parallel processes for realtime and non-realtime submap building. 
 The additional back submap can be built on the un-tracked frames to establish the data association for submap merging without the requirement of loop-closure.
 
