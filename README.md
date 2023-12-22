@@ -9,6 +9,7 @@ This system contains two parallel processes for realtime and non-realtime submap
 The additional back submap can be built on the un-tracked frames to establish the data association for submap merging without the requirement of loop-closure.
 
 If you want to develop your program based on our work, please cite:
+```yaml
 @ARTICLE{10314038,
   author={Chen, Weinan and Fu, Changfei and Zhu, Lei and Loo, Shing-Yan and Zhang, Hong},
   journal={IEEE Transactions on Industrial Electronics}, 
@@ -18,7 +19,7 @@ If you want to develop your program based on our work, please cite:
   number={},
   pages={1-10},
   doi={10.1109/TIE.2023.3327342}}
-
+```
 ## Run
 Let's take a demo of a [TUM dataset](https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download) as an example of how to run our RUMI-SLAM.
 
