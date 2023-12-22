@@ -1,5 +1,6 @@
 # Rumination Meets VSLAM: You Don't Need to Build All the Sub-maps in Realtime (T-IE 2023)
 [Paper](https://doi.org/10.1109/TIE.2023.3327342) 
+
 [Weinan Chen†](https://jdgcxy.gdut.edu.cn/info/1099/3473.htm), [Changfei Fu†](https://rcvlab.eee.sustech.edu.cn/authors/changfei_fu/), Lei Zhu, Shing-Yan Loo and [Hong Zhang](https://rcvlab.eee.sustech.edu.cn/authors/hong_zhang/).
 Biomimetic and Intelligent Robotics Lab, Guangdong University of Technology, Guangzhou;
 Robotics and Computer Vision Lab, Southern University of Science and Technology, Shenzhen;
