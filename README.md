@@ -22,7 +22,8 @@ If you want to develop your program based on our work, please cite:
 ## Run
 Let's take a demo of a [TUM dataset](https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download) as an example of how to run our RUMI-SLAM.
 
-1. Download a sequence of TUM dataset: `wget https://cvg.cit.tum.de/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_nostructure_notexture_far.tgz -O ~/rgbd_dataset_freiburg3_nostructure_notexture_far.tgz`. Unzip it: `cd ~ && tar zxvf rgbd_dataset_freiburg3_nostructure_notexture_far.tgz`.
+1. Download a sequence of TUM dataset:<br>
+`wget https://cvg.cit.tum.de/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_nostructure_notexture_far.tgz -O ~/rgbd_dataset_freiburg3_nostructure_notexture_far.tgz`. Unzip it: `cd ~ && tar zxvf rgbd_dataset_freiburg3_nostructure_notexture_far.tgz`.
 2. Modify the launch file (`src/rumi-slam/launch/main.launch`) according to our dataset path: 
 ```yaml
 <launch>
